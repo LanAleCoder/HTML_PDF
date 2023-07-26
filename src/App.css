@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #020303;
+  color: white;
+}
+
+body {
+  min-height: 100dvh;
+  display: grid;
+  place-content: center;
+  display: grid;
+}
+
+.container {
+  --size: 200px;
+  color: rgb(239, 243, 244);
+  position: relative;
+  width: var(--size);
+  height: var(--size);
+  container-type: size;
+  background-color: red;
+}
+
+.container * {
+  position: absolute;
+  border-style: solid;
+}
+
+.border1 {
+  /* 使いたかっただけ。この場合は border-width のショートハンドで書ける😂 */
+  border-block-width: 6.2cqw;
+  border-inline-width: 6.9cqw;
+  top: 0;
+  left: calc(50% - 14.2cqw);
+  width: 28cqw;
+  transform: skew(35deg);
+  height: 100cqh;
+}
+
+.border2,
+.border3 {
+  width: 0;
+  border-width: 4.2cqw;
+  height: 45cqh;
+  transform: skew(-41deg);
+  background-color: currentColor;
+}
+
+.border2 {
+  top: 0;
+  left: calc(50% + 18.4cqw);
+  border-bottom-left-radius: 15cqw;
+}
+
+.border3 {
+  left: calc(50% - 30.4cqw);
+  bottom: 0;
+  border-top-right-radius: 5cqw;
+}
+
+.small {
+  --size: 80px;
+}
+
+/* さめきった街に別れを告げ荒れくるう刺激に身をさらせ！ */
